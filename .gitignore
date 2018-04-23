@@ -206,3 +206,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# NumPy saved data objects
+*.npy
+*.npz
