@@ -196,3 +196,4 @@ venv.bak/
 # credentials
 db_config.py
 db_config.json
+kernel*.json
