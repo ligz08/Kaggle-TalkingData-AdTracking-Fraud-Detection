@@ -197,3 +197,8 @@ venv.bak/
 db_config.py
 db_config.json
 kernel*.json
+
+# LaTex intermediate files
+*.aux
+*.out
+*.synctex.gz

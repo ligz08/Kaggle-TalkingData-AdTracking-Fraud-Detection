@@ -1,0 +1,89 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{listings}
+\usepackage{bm}
+\usepackage{hyperref}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+ 
+\title{TalkingData AdTracking Fraud Detection Challenge}%replace X with the appropriate number
+\author{Guozhen Li, Hairu Lang \\ %replace with your name
+STA 208 - Statistical Machine Learning - Final Project} %if necessary, replace with your course title
+
+\maketitle
+
+
+\section{Problem Description}
+This problem is a data analysis challenge from Kaggle (www.kaggle.com), originally found at  \url{https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection}.
+The data provider, TalkingData, tracks a large base of mobile device activity, 
+and wants to understand which ad clicks end up with app downloads, 
+and which ones lead to nothing (thus are suspects of fraud clicks).
+We are provided with a training data set of over 180 million clicks, 
+and the objective is to predict whether a click leads to an app download.
+
+For each click, from the raw training data set we know about:
+\begin{itemize}
+	\item IP address
+	\item app of marketing
+	\item device type
+	\item mobile device operating system type
+	\item mobile ad publisher channel
+	\item click time (date and time, down to seconds)
+	\item whether a download occurs at the end
+	\item download time, if a download occurs
+\end{itemize}
+
+This data analysis task poses, at least, the following challenges:
+\begin{enumerate}
+	\item Extract useful features from the seemingly dispersed information found in the raw training data.
+	\item Handling of the extra-large data set (over 180 million samples, as an over 7.5GB text file), which can hardly fit into the memory of a normal personal computer.
+	\item Efficient and effective learning method to learn from the data.
+\end{enumerate}
+
+
+\section{Data Exploration}
+
+\section{Feature Engineering and Data Pre-processing}
+
+\section{Modeling Predicting}
+
+\section{Model Evaluation}
+
+\section{Conclusions}
+
+ 
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
