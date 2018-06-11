@@ -1,4 +1,4 @@
-from .HERE import SCRATCH_DIR, DOWNLOADS_DIR
+from HERE import SCRATCH_DIR, DOWNLOADS_DIR
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import label_binarize
@@ -72,7 +72,7 @@ class Preprocessor(object):
     def onehot_encode_catcols(self, df):
         onehot_ = {}
         for ft in CAT_COLS:
-            print('One-hot encode:', ft)
+            # print('One-hot encode:', ft)
             onehot_[ft] = label_binarize(df[ft],
                                          classes=list(self.recurring_.get(ft) or np.sort(df[ft].unique())),
                                          sparse_output=True)
