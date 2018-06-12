@@ -202,3 +202,6 @@ kernel*.json
 *.aux
 *.out
 *.synctex.gz
+
+# Zip files
+*.zip
