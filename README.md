@@ -6,3 +6,5 @@ Problem description (Kaggle): https://www.kaggle.com/c/talkingdata-adtracking-fr
 Source code URL (GitHub): https://github.com/ligz08/Kaggle-TalkingData-AdTracking-Fraud-Detection
 
 Summary report: [report/report.pdf](report/report.pdf)
+
+Working scripts are in the [`python` folder](python/)
